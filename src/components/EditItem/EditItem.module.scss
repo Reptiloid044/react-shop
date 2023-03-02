@@ -1,0 +1,150 @@
+.card {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  flex-direction: column;
+  padding: 32px;
+  border-radius: 10px;
+  background: #a1a8de;
+  width: 40%;
+  height: 530px;
+  left: 16px;
+  top: 16px;
+
+  &__form {
+    display: flex;
+  };
+
+  &__leftSide {
+    width: 400px;
+  };
+
+  &__rightSide {
+    display: flex;
+    width: 100px;
+    margin-left: auto;
+  };
+
+  &__image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+    height: 315px;
+    gap: 10px;
+  };
+
+  &__imgProduct {
+    justify-content: center;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    cursor: pointer;
+  };
+
+  &__imageURL {
+    width: 100%;
+  };
+
+  &__titleBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  };
+
+  &__title {
+    width: 100%;
+    font-size: 20px;
+    color: #f1f2f9;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 102%;
+    height: 20px;
+  };
+
+  &__parameters {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    width: 100%;
+    color: #75767f;
+  };
+
+  &__inputParameter {
+    width: 120px;
+    margin-left: auto;
+  };
+
+  &__inputParameterTitle {
+    width: 100%;
+  };
+
+  &__price {
+    display: flex;
+    margin: 8px 0;
+    gap: 40px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #75767f;
+  };
+
+  &__line {
+    width: 100%;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    border: 1px solid #3B3E4A;
+  };
+
+  &__text {
+    text-transform: uppercase;
+    font-size: 20px;
+  };
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  };
+};
+
+.button {
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  gap: 50px;
+  margin-top: 100%;
+};
+
+.button__confirm {
+  background-color: rgb(154, 245, 112);
+  color: black;
+  font-size: 18px;
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 5px ;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+};
+
+.button__confirm:hover {
+  background-color: rgb(137, 210, 78);
+  transform: translateY(3px) translateX(-2px);
+};
+
+.button__back {
+  background-color: #9d9d9d;
+  color: black;
+  font-size: 18px;
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 5px ;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+};
+
+.button__back:hover {
+  background-color: #767676;
+  transform: translateY(3px) translateX(-2px);
+};

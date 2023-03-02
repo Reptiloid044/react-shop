@@ -1,0 +1,67 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  box-shadow: 0px 1px 0px 0px #323542;
+
+  &__logo {
+    display: flex;
+    background-image: url(../../assets/images/shopping.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 16px 13px;
+    height: 50px;
+    width: 50px;
+  };
+
+  &__basket {
+    display: flex;
+    background-image: url(../../assets/images/basket.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 16px 13px;
+    justify-content: space-between;
+    gap: 10px;
+    height: 50px;
+    width: 50px;
+  };
+
+  &__basketLink {
+    width: 100%;
+    height: 100%;
+  };
+};
+
+.nav {
+  &_list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  };
+
+  &_item {
+    list-style: none;
+    margin-right: 64px;
+    color: #75767F;
+  };
+
+  &_link {
+    color: #75767F;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 11px;
+  };
+  
+  .is_active {
+    color: #fff;
+  };
+}

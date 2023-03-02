@@ -1,0 +1,262 @@
+{
+  "phones": [
+    {
+      "id": "1",
+      "imageUrl": "https://i.citrus.world/imgcache/size_800/uploads/shop/4/3/4304fca57a7b0459f70a77c21150ce7a.jpg",
+      "name": "apple-iphone-11-32gb-black",
+      "count": 4,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g"
+    },
+    {
+      "id": "2",
+      "imageUrl": "https://content.rozetka.com.ua/goods/images/big/114142025.jpg",
+      "name": "Razer Blade RTX 3080",
+      "count": 321,
+      "size": {
+        "width": 213,
+        "height": 213
+      },
+      "weight": "231",
+      "width": 123,
+      "height": 123
+    },
+    {
+      "id": "3",
+      "imageUrl": "https://content.rozetka.com.ua/goods/images/big/114142025.jpg",
+      "name": "Razer Blade RTX 3080",
+      "count": 123,
+      "size": {
+        "width": 123,
+        "height": 123
+      },
+      "weight": "123",
+      "width": 123,
+      "height": 123
+    },
+    {
+      "id": "4",
+      "imageUrl": "https://i.citrus.world/imgcache/size_800/uploads/shop/4/3/4304fca57a7b0459f70a77c21150ce7a.jpg",
+      "name": "apple-iphone-11-32gb-black",
+      "count": 4,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g"
+    },
+    {
+      "id": "5",
+      "imageUrl": "https://i.citrus.world/imgcache/size_800/uploads/shop/4/3/4304fca57a7b0459f70a77c21150ce7a.jpg",
+      "name": "apple-iphone-11-32gb-black",
+      "count": 4,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g"
+    },
+    {
+      "id": "6",
+      "imageUrl": "https://image-us.samsung.com/us/smartphones/galaxy-s23-ultra/images/gallery/lavender/01-DM3-Lavender-PDP-1600x1200.jpg?$product-details-jpg$",
+      "name": "Galaxy S23 Ultra",
+      "count": 1,
+      "size": {
+        "width": 222,
+        "height": 333
+      },
+      "weight": "123"
+    },
+    {
+      "id": "7",
+      "imageUrl": "https://i.citrus.world/imgcache/size_800/uploads/shop/4/3/4304fca57a7b0459f70a77c21150ce7a.jpg",
+      "name": "apple-iphone-11-32gb-black",
+      "count": 4,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g"
+    },
+    {
+      "id": "8",
+      "imageUrl": "https://i.citrus.world/imgcache/size_800/uploads/shop/4/3/4304fca57a7b0459f70a77c21150ce7a.jpg",
+      "name": "apple-iphone-11-32gb-black",
+      "count": 4,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g"
+    },
+    {
+      "id": "9",
+      "imageUrl": "https://i.citrus.world/imgcache/size_800/uploads/shop/4/3/4304fca57a7b0459f70a77c21150ce7a.jpg",
+      "name": "apple-iphone-11-32gb-black",
+      "count": 4,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g"
+    },
+    {
+      "id": "10",
+      "imageUrl": "https://content.rozetka.com.ua/goods/images/big/303452382.jpg",
+      "name": "ASUS ZenBook Pro Duo",
+      "count": 1,
+      "size": {
+        "width": 321,
+        "height": 321
+      },
+      "weight": "321",
+      "width": 12,
+      "height": 100
+    },
+    {
+      "id": "11",
+      "imageUrl": "https://i.citrus.world/imgcache/size_800/uploads/shop/4/3/4304fca57a7b0459f70a77c21150ce7a.jpg",
+      "name": "apple-iphone-11-32gb-black",
+      "count": 4,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g"
+    },
+    {
+      "id": "12",
+      "imageUrl": "https://i.citrus.world/imgcache/size_800/uploads/shop/4/3/4304fca57a7b0459f70a77c21150ce7a.jpg",
+      "name": "apple-iphone-11-32gb-black",
+      "count": 4,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g"
+    },
+    {
+      "id": "13",
+      "imageUrl": "https://i.citrus.world/imgcache/size_800/uploads/shop/4/3/4304fca57a7b0459f70a77c21150ce7a.jpg",
+      "name": "apple-iphone-11-32gb-black",
+      "count": 4,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g"
+    },
+    {
+      "id": "14",
+      "imageUrl": "https://i.citrus.world/imgcache/size_800/uploads/shop/4/3/4304fca57a7b0459f70a77c21150ce7a.jpg",
+      "name": "apple-iphone-11-32gb-black",
+      "count": 4,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g"
+    },
+    {
+      "id": "15",
+      "imageUrl": "https://i.citrus.world/imgcache/size_800/uploads/shop/4/3/4304fca57a7b0459f70a77c21150ce7a.jpg",
+      "name": "apple-iphone-11-32gb-black",
+      "count": 4,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g"
+    },
+    {
+      "id": "16",
+      "imageUrl": "https://i.citrus.world/imgcache/size_800/uploads/shop/4/3/4304fca57a7b0459f70a77c21150ce7a.jpg",
+      "name": "apple-iphone-11-32gb-black",
+      "count": 4,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g"
+    },
+    {
+      "id": "17",
+      "imageUrl": "https://i.citrus.world/imgcache/size_800/uploads/shop/4/3/4304fca57a7b0459f70a77c21150ce7a.jpg",
+      "name": "apple-iphone-11-32gb-black",
+      "count": 4,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g"
+    },
+    {
+      "id": "18",
+      "imageUrl": "https://i.citrus.world/imgcache/size_800/uploads/shop/4/3/4304fca57a7b0459f70a77c21150ce7a.jpg",
+      "name": "apple-iphone-11-32gb-black",
+      "count": 4,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g"
+    },
+    {
+      "id": "19",
+      "imageUrl": "https://i.citrus.world/imgcache/size_800/uploads/shop/4/3/4304fca57a7b0459f70a77c21150ce7a.jpg",
+      "name": "apple-iphone-11-32gb-black",
+      "count": 4,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g"
+    },
+    {
+      "id": "20",
+      "imageUrl": "https://i.citrus.world/imgcache/size_800/uploads/shop/4/3/4304fca57a7b0459f70a77c21150ce7a.jpg",
+      "name": "apple-iphone-11-32gb-black",
+      "count": 4,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g"
+    }
+  ],
+  "comments": [
+    {
+      "productId": 2,
+      "description": "hello",
+      "date": "2023-03-02T09:59:11.305Z",
+      "id": 1
+    },
+    {
+      "productId": 3,
+      "description": "razer",
+      "date": "2023-03-02T13:19:36.436Z",
+      "id": 2
+    },
+    {
+      "productId": 1,
+      "description": "hello 1",
+      "date": "2023-03-02T18:18:28.387Z",
+      "id": 3
+    },
+    {
+      "productId": 2,
+      "description": "razer 2",
+      "date": "2023-03-02T18:18:40.735Z",
+      "id": 4
+    },
+    {
+      "productId": 2,
+      "description": "razer 2",
+      "date": "2023-03-02T20:10:53.372Z",
+      "id": 5
+    }
+  ]
+}
