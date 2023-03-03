@@ -71,7 +71,7 @@ export const EditItem: React.FC = () => {
               <div className={classes.card__title}> {parameter.name} </div>
               <input
                 className={classes.card__inputParameterTitle}
-                maxlength={45}
+                maxLength={45}
                 required
                 type="text"
                 id="count"
@@ -88,7 +88,7 @@ export const EditItem: React.FC = () => {
               <div className={classes.card__price}> {`Count: ${parameter.count}`}
                 <input
                   className={classes.card__inputParameter}
-                  maxlength={3}
+                  maxLength={3}
                   required
                   type="text"
                   id="count"
@@ -104,7 +104,7 @@ export const EditItem: React.FC = () => {
                   <div className={classes.card__text}>{`Width: ${parameter.width}`}</div>
                   <input 
                     className={classes.card__inputParameter}
-                    maxlength={3}
+                    maxLength={3}
                     required
                     type="text"
                     id="width"
@@ -118,7 +118,7 @@ export const EditItem: React.FC = () => {
                   <div className={classes.card__text}>{`Height: ${parameter.height}`}</div>
                   <input 
                     className={classes.card__inputParameter}
-                    maxlength={3}
+                    maxLength={3}
                     required
                     type="text"
                     id="height"
@@ -132,7 +132,7 @@ export const EditItem: React.FC = () => {
                   <div className={classes.card__text}>{`Weight: ${parameter.weight}`}</div>
                   <input 
                     className={classes.card__inputParameter}
-                    maxlength={5}
+                    maxLength={5}
                     required
                     type="text"
                     id="weight"
