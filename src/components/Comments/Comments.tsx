@@ -19,32 +19,37 @@ export const Comments: React.FC<Comment> = () => {
   const addComment = (commentToAdd: Comment) => dispatch(commentsActions.add(commentToAdd));
   const removeComment = (commentToRemove: number) => dispatch(commentsActions.take(commentToRemove));
 
-  const handleSubmit = (event: React.FormEvent) => {
+  const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
 
     if (!newComment || !phoneId) {
       return;
     };
 
-
-    createComment(newComment, parseInt(phoneId))
-      .then(comment => {
-        addComment(comment);
-        setNewCommment('');
-      }) 
+    try {
+    const comment = await createComment(newComment, parseInt(phoneId));
+      addComment(comment);
+      setNewCommment('');
+    } catch (error) {
+      console.log(error);
+    }
   };
 
-  const handleDelete = (id: number) => {
-    deleteComment(id)
-      .then(id => {
-        removeComment(id)
-      })
+  const handleDelete = async (id: number) => {
+    try {
+    const removeCommentById = await deleteComment(id)
+    
+    removeComment(removeCommentById)
+  } catch (error) {
+      console.log(error);
+    }
   };
 
   useEffect(() => {
     if (!phoneId) {
       return;
     }
+
     dispatch(commentsActions.init(parseInt(phoneId)))
   }, []);
 
@@ -89,4 +94,4 @@ export const Comments: React.FC<Comment> = () => {
       </div>
     </div>
   )
-}
+};

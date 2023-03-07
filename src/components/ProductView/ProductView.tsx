@@ -13,9 +13,11 @@ const selectSpecificProduct = createSelector(
 
 export const ProductView: React.FC<{}> = (): JSX.Element => {
   const {phoneId} = useParams();
+  
   if (!phoneId) {
     return <div> No phones </div>;
-  }   
+  };
+
   const parameter = useAppSelector((state) => selectSpecificProduct(state, phoneId));
   const navigate = useNavigate();
 

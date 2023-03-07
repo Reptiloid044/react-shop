@@ -4,16 +4,16 @@ import { Comment } from './types/comment';
 
 const BASE_URL = 'http://localhost:8080';
 
-export async function getProducts() {
-  const result: Product[] = await axios.get(`${BASE_URL}/phones`)
-    .then(data => data.data);
-  return result;
+export async function getProducts():Promise<Product[]> {
+  const result = await axios.get(`${BASE_URL}/phones`)
+
+  return result.data;
 };
 
-export async function getProduct(phoneId: number) {
-  const result: Product = await axios.get(`${BASE_URL}/phones/${phoneId}`)
-    .then(data => data.data);
-  return result;
+export async function getProduct(phoneId: number):Promise<Product> {
+  const result = await axios.get(`${BASE_URL}/phones/${phoneId}`);
+
+  return result.data;
 };
 
 export async function updateProduct(
@@ -24,8 +24,9 @@ export async function updateProduct(
   width: number, 
   height: number, 
   weight: string
-  ) {
-  const result: Product = await axios.patch(`${BASE_URL}/phones/${phoneId}`, {
+  ): Promise<Product> {
+    
+  const result = await axios.patch(`${BASE_URL}/phones/${phoneId}`, {
     imageUrl,
     name,
     count,
@@ -35,24 +36,51 @@ export async function updateProduct(
     },
     weight,
   })
-    .then(data => data.data);
-  return result;
+
+  return result.data;
 };
 
-export async function getComment(phoneId: number) {
-  const result: Comment[] = await axios.get(`${BASE_URL}/comments/?productId=${phoneId}`)
-    .then(response => response.data);
-  return result;
+export async function createProduct(
+  imageUrl: string, 
+  name: string,
+  count: number, 
+  width: number, 
+  height: number, 
+  weight: string
+): Promise<Product> {
+
+  const result = await axios.post(`${BASE_URL}/phones`, {
+    imageUrl,
+    name,
+    count,
+    size: {
+      width,
+      height,
+    },
+    weight,
+  });
+
+  return result.data;
 };
 
-export async function createComment(description: string, productId: number) {
-  const result: Comment = await axios.post(`${BASE_URL}/comments`, {
+export async function getComment(phoneId: number):Promise<Comment[]> {
+  const result = await axios.get(`${BASE_URL}/comments/?productId=${phoneId}`);
+
+  return result.data;
+};
+
+export async function createComment(
+  description: string, 
+  productId: number,
+  ): Promise<Comment> {
+
+  const result = await axios.post(`${BASE_URL}/comments`, {
     productId: productId,
     description: description,
     date: (new Date()).toISOString()
   })
-    .then(data => data.data);
-  return result;
+
+  return result.data;
 };
 
 export async function deleteComment(id: number) {

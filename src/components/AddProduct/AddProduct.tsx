@@ -1,22 +1,15 @@
 import { useState } from 'react';
-import { useAppDispatch } from '../../app/hooks';
-import classes from './EditItem.module.scss';
-import { useNavigate, useParams } from 'react-router-dom';
-import { updateProduct } from '../../api';
-import * as productsActions from '../../features/productReducer';
+import classes from './AddProduct.module.scss';
+import { useNavigate } from 'react-router-dom';
+import { createProduct } from '../../api';
 
-export const EditItem: React.FC = () => {
-  const {phoneId} = useParams();
-  const dispatch = useAppDispatch();
-
-  const [parameter, setParameter] = useState({
-    imageUrl: '',
-    name: '',
-    count: '',
-    width: '',
-    height: '',
-    weight: ''
-  });
+export const AddProduct: React.FC = () => {
+  const [imageUrl, setImageUrl] = useState('');
+  const [name, setName] = useState('');
+  const [count, setCount] = useState('');
+  const [width, setWidth] = useState('');
+  const [height, setHeight] = useState('');
+  const [weight, setWeight] = useState('');
 
   const navigate = useNavigate();
 
@@ -27,25 +20,21 @@ export const EditItem: React.FC = () => {
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
 
-    if (!phoneId) {
-      return;
-    }
-
-    const response = await updateProduct(
-      parseInt(phoneId), 
-      parameter.imageUrl,
-      parameter.name, 
-      parseInt(parameter.count), 
-      parseInt(parameter.width), 
-      parseInt(parameter.height), 
-      parameter.weight
+    try {
+      await createProduct(
+        imageUrl,
+        name,
+        parseInt(count),
+        parseInt(width),
+        parseInt(height),
+        weight,
       );
 
-      if (response) {
-        dispatch(productsActions.init());
-      };
-
       navigate('/phones');
+
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -55,20 +44,20 @@ export const EditItem: React.FC = () => {
           <div className={classes.card__leftSide}>
 
             <div className={classes.card__image}>
-              <img src={parameter.imageUrl} alt="image" className={classes.card__imgProduct} />
+              <img src={imageUrl} alt="image" className={classes.card__imgProduct} />
               <input 
                 className={classes.card__imageURL}
                 required
                 type="url"
                 id="url"
                 name="url"
-                value={parameter.imageUrl}
+                value={imageUrl}
                 placeholder="Enter new Url for image"
-                onChange={event => setParameter({...parameter, imageUrl: event.target.value})}
+                onChange={event => setImageUrl(event.target.value)}
               />
             </div>
             <div className={classes.card__titleBox}>
-              <div className={classes.card__title}> {parameter.name} </div>
+              <div className={classes.card__title}> {name} </div>
               <input
                 className={classes.card__inputParameterTitle}
                 maxLength={45}
@@ -77,16 +66,16 @@ export const EditItem: React.FC = () => {
                 type="text"
                 id="count"
                 name="count" 
-                value={parameter.name}
+                value={name}
                 placeholder="Enter new name"
-                onChange={event => setParameter({...parameter, name: event.target.value})}
+                onChange={event => setName(event.target.value)}
               />
             </div>
 
             <hr className={classes.card__line}/>
 
             <div className={classes.card__parameters}>
-              <div className={classes.card__price}> {`Count: ${parameter.count}`}
+              <div className={classes.card__price}> {`Count: ${count}`}
                 <input
                   className={classes.card__inputParameter}
                   maxLength={3}
@@ -95,15 +84,15 @@ export const EditItem: React.FC = () => {
                   type="text"
                   id="count"
                   name="count" 
-                  value={parameter.count}
+                  value={count}
                   placeholder="Enter new count"
-                  onChange={event => setParameter({...parameter, count: event.target.value})}
+                  onChange={event => setCount(event.target.value)}
                 />
               </div>
 
               <div className={classes.card__container}>
                 <div className={classes.card__box}>
-                  <div className={classes.card__text}>{`Width: ${parameter.width}`}</div>
+                  <div className={classes.card__text}>{`Width: ${width}`}</div>
                   <input 
                     className={classes.card__inputParameter}
                     maxLength={3}
@@ -112,13 +101,13 @@ export const EditItem: React.FC = () => {
                     type="text"
                     id="width"
                     name="width"
-                    value={parameter.width}
+                    value={width}
                     placeholder="Enter new width"
-                    onChange={event => setParameter({...parameter, width: event.target.value})}
+                    onChange={event => setWidth(event.target.value)}
                   />
                 </div>
                 <div className={classes.card__box}>
-                  <div className={classes.card__text}>{`Height: ${parameter.height}`}</div>
+                  <div className={classes.card__text}>{`Height: ${height}`}</div>
                   <input 
                     className={classes.card__inputParameter}
                     maxLength={3}
@@ -127,13 +116,13 @@ export const EditItem: React.FC = () => {
                     type="text"
                     id="height"
                     name="height"
-                    value={parameter.height}
+                    value={height}
                     placeholder="Enter new height"
-                    onChange={event => setParameter({...parameter, height: event.target.value})}
+                    onChange={event => setHeight(event.target.value)}
                   />
                 </div>
                 <div className={classes.card__box}>
-                  <div className={classes.card__text}>{`Weight: ${parameter.weight}`}</div>
+                  <div className={classes.card__text}>{`Weight: ${weight}`}</div>
                   <input 
                     className={classes.card__inputParameter}
                     maxLength={5}
@@ -142,9 +131,9 @@ export const EditItem: React.FC = () => {
                     type="text"
                     id="weight"
                     name="weight"
-                    value={parameter.weight}
+                    value={weight}
                     placeholder="Enter new weight"
-                    onChange={event => setParameter({...parameter, weight: event.target.value})}
+                    onChange={event => setWeight(event.target.value)}
                   />
                 </div>
               </div>
@@ -153,7 +142,7 @@ export const EditItem: React.FC = () => {
 
           <div className={classes.card__rightSide}>
             <div className={classes.button}>
-              <button type="submit" className={classes.button__confirm} onSubmit={(event) => handleSubmit(event)}>Confirm</button>
+              <button type="submit" className={classes.button__confirm} onSubmit={(event) => handleSubmit(event)}>Add Product</button>
               <button className={classes.button__back} onClick={handleGoBack}>Back</button>
             </div>
           </div>

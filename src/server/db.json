@@ -225,6 +225,83 @@
         "height": 200
       },
       "weight": "200g"
+    },
+    {
+      "imageUrl": "https://content2.rozetka.com.ua/goods/images/big/310649565.jpg",
+      "name": "Samsung Galaxy S23 Ultra",
+      "count": 123,
+      "size": {
+        "width": 123,
+        "height": 213
+      },
+      "weight": "12321",
+      "id": "RgnKXXg"
+    },
+    {
+      "imageUrl": "https://content2.rozetka.com.ua/goods/images/big/284920909.jpg",
+      "name": "Apple iPhone 14 Pro Max",
+      "count": 121,
+      "size": {
+        "width": 213,
+        "height": 213
+      },
+      "weight": "21321",
+      "id": "oJivrSp"
+    },
+    {
+      "imageUrl": "https://content.rozetka.com.ua/goods/images/big/114142025.jpg",
+      "name": "Razer Blade RTX 3080",
+      "count": 321,
+      "size": {
+        "width": 321,
+        "height": 321
+      },
+      "weight": "321",
+      "id": "CAjiqf5"
+    },
+    {
+      "imageUrl": "https://content.rozetka.com.ua/goods/images/big/114142025.jpg",
+      "name": "Razer Blade RTX 3080",
+      "count": 313,
+      "size": {
+        "width": 321,
+        "height": 321
+      },
+      "weight": "32112",
+      "id": "teUwwLt"
+    },
+    {
+      "imageUrl": "https://content.rozetka.com.ua/goods/images/big/282291399.jpg",
+      "name": "Motorola G32",
+      "count": 123,
+      "size": {
+        "width": 123,
+        "height": 213
+      },
+      "weight": "12321",
+      "id": "8_AsGaM"
+    },
+    {
+      "imageUrl": "https://content2.rozetka.com.ua/goods/images/big/263856168.jpg",
+      "name": "Samsung Galaxy M33 5G",
+      "count": 123,
+      "size": {
+        "width": 123,
+        "height": 23
+      },
+      "weight": "21321",
+      "id": "r8Br_3o"
+    },
+    {
+      "imageUrl": "https://content.rozetka.com.ua/goods/images/big/310594229.jpg",
+      "name": "Samsung Galaxy S23",
+      "count": 1,
+      "size": {
+        "width": 2,
+        "height": 123
+      },
+      "weight": "1",
+      "id": "8iBq_dH"
     }
   ],
   "comments": [
@@ -257,6 +334,12 @@
       "description": "razer 2",
       "date": "2023-03-02T20:10:53.372Z",
       "id": 5
+    },
+    {
+      "productId": 6,
+      "description": "Galaxy S23",
+      "date": "2023-03-07T15:26:41.528Z",
+      "id": 6
     }
   ]
 }

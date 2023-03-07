@@ -5,7 +5,7 @@
 ## Description
 
   This app displays products taken from json-server.
-  You also can add in basket, edit product, and see comments for each product.
+  You also can add in basket, edit product, add product, and see comments for each product.
 
 ## Technologies used 
 

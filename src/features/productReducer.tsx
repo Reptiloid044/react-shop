@@ -1,7 +1,7 @@
 import {  createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { getProducts, } from '../api';
 import { RootState } from '../app/store';
-import { InitialStateForProducts } from '../types/product';
+import { InitialStateForProducts, Product } from '../types/product';
 
 const initialState: InitialStateForProducts = {
   products: [],
@@ -24,6 +24,9 @@ export const productsSlice = createSlice({
     takefromBasket: (state, action: PayloadAction<number>) => {
       state.productsInBasket = state.productsInBasket.filter(product => product.id !== action.payload);
      },
+    addProduct: (state, action: PayloadAction<Product>) => {
+      state.products.push(action.payload);
+    },
   },
   
   extraReducers: (builder) => {
@@ -44,7 +47,7 @@ export const productsSlice = createSlice({
 });
 
 export const { actions } = productsSlice;
-export const {addToBasket, takefromBasket} = productsSlice.actions;
+export const {addToBasket, takefromBasket, addProduct} = productsSlice.actions;
 export const selectProduct = (state: RootState) => state.products;
 export const productsInBasket = (state: RootState) => state.products.productsInBasket;
 

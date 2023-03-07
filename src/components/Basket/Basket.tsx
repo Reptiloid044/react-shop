@@ -10,6 +10,7 @@ export const Basket: React.FC = () => {
 
   const onTakefromBasket = (event: React.MouseEvent<HTMLButtonElement>, id: number) => {
     event.preventDefault();
+    
     dispatch(takefromBasket(id));
   }
 

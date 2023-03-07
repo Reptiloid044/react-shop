@@ -25,9 +25,18 @@ export const Header: React.FC = () => {
             </ul>
           </nav>
 
+          <div className={classes.header__rightSide}>
+            <div className={classes.header__addProduct}>
+              <Link to ="add" className={classes.header__addLink}>
+                <button className={classes.header__addButton}>
+                  Add Product
+                </button>
+              </Link>
+          </div>
           <div className={classes.header__basket}>
             <label>{productsInBasket.length}</label>
             <Link to="basket" className={classes.header__basketLink}></Link>
+          </div>
           </div>
       </header>
       <Outlet />

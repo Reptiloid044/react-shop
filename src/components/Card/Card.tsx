@@ -17,10 +17,10 @@ type Props = {
 export const Card: React.FC<Props> = memo(({imageUrl, name, count, width, height, weight, id }) => {
   const dispatch = useDispatch()
   
-  const onAddToBasket = (event: React.MouseEvent<HTMLButtonElement>, id: number) => {
+  const onAddToBasket = async (event: React.MouseEvent<HTMLButtonElement>, id: number) => {
     event.preventDefault();
     dispatch(addToBasket(id))
-  }
+  };
  
   return (
     <Link 

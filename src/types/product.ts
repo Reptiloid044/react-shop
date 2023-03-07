@@ -1,12 +1,10 @@
 export interface Product {
-  map: any;
-  products: any;
   id: number;
   imageUrl: string;
   name: string;
   count: number;
   size: ProductSize;
-  weight: string
+  weight: string;
 };
 
 interface ProductSize {
